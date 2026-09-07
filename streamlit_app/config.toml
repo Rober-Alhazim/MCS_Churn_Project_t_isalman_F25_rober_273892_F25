@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#00F5D4"          # لغة النيون - سيان مشع للأزرار والنقاط الحركية
+backgroundColor = "#080B10"      # أسود كربوني عميق وفخم (Carbon Obsidian Black)
+secondaryBackgroundColor = "#121824" # رمادي زجاجي داكن للحاويات والجداول
+textColor = "#F8FAFC"            # نصوص بيضاء ثلجية نقية عالية القراءة لراحة العين
+font = "sans serif"

@@ -1,0 +1,5 @@
+/* إجبار النظام برمجياً على تطبيق اتجاه اليمين إلى اليسار لجميع الحقول والمدخلات */
+.stMarkdown, .stDataFrame, .stMetric, .stSidebar, .stButton, input {
+    direction: rtl;
+    text-align: right;
+}
