@@ -1,53 +1,30 @@
-# 📱 Telecom Churn Prediction System
+## ⚙️ How to Setup and Run the Project Locally
 
-An Intelligent Decision Support System to predict customer attrition using Ant Colony Optimization (ACO) clustering and a generative AI assistant.
+Dear Professor, to test the application with the full database sample (99,999 subscriber records), please follow these simple steps to restore the database schema on your local machine:
 
----
+### 1. Database Creation (PostgreSQL)
+1. Open your pgAdmin or PostgreSQL terminal.
+2. Create a new database named exactly: `telecom_churn_db_v2`
 
-## 🌐 Live System Demo
-You can test the fully functional live application immediately without any installation:
-👉 **[Click Here to Open the Live Demo](https://streamlit.app)**
-
-*Note: In the live demo, go to the **Data Management** page and click **"تشغيل محرك ACO"** to instantly generate the 99,999 subscriber records directly in the browser session memory.*
-
----
-
-## 🛠️ How to Setup and Run Locally (Alternative)
-
-### 1. Installation
-Open your terminal in the project folder and run:
-```bash
-pip install -r requirements.txt
-```
-
-### 2. Database Setup (Optional)
-To run locally with the full database sample:
-1. Create a database named `telecom_churn_db_v2` in your PostgreSQL.
-2. Restore the database backup file by running:
+### 2. Restore Database Sample
+Run the following command in your terminal to restore the full 99,999 records from the provided backup file:
 ```bash
 psql -U postgres -d telecom_churn_db_v2 -f database/backup.sql
 ```
 
-### 3. Configure Environment Variables
-Create a `.env` file in the root folder and add your credentials:
+### 3. Setup Configuration
+Create a `.env` file in the project root directory and write your database login details and your Groq API Key:
 ```env
 DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=telecom_churn_db_v2
 DB_USER=postgres
 DB_PASSWORD=your_postgres_password
-GROQ_API_KEY=your_groq_api_key_here
+GROQ_API_KEY= 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
 ```
 
-### 4. Run Locally
+### 4. Run the Dashboard
 ```bash
+pip install -r requirements.txt
 streamlit run streamlit_app/app.py
 ```
-
----
-
-## 📁 Project Structure
-* `aco_engine/`: The core Ant Colony Optimization and Risk Scoring algorithms.
-* `database/`: Database configuration and backup sql script.
-* `streamlit_app/`: The UI dashboard screens and interactive charts.
-* `utils/`: Machine learning offer composers and API connectors.
