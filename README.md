@@ -20,7 +20,7 @@ DB_PORT=5432
 DB_NAME=telecom_churn_db_v2
 DB_USER=postgres
 DB_PASSWORD=your_postgres_password
-GROQ_API_KEY= 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
+GROQ_API_KEY= your_groq_api_key_here
 ```
 
 ### 4. Run the Dashboard
