@@ -30,6 +30,5 @@ streamlit run streamlit_app/app.py
 ```
 ### 5. Demo Link
 ```bash
-https://drive.google.com/file/d/1vS0Nu8s2x-DZcQtZL6pNRGH21R2di7tW/view?usp=drive_link
-
+https://drive.google.com/file/d/1mUZdhvMF0F1dvd5VEVGOtK0TJokdEuA0/view?usp=sharing
 ```
